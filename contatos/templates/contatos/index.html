@@ -37,9 +37,9 @@
   <ul class="pagination">
     {% for pagina in chave_contatos.paginator.page_range %}
     {% if chave_contatos.number == pagina %}
-    <li class="page-item active"><a class="page-link" href="?p={{pagina}}">{{pagina}}</a></li>
+    <li class="page-item active"><a class="page-link" href="?p={{pagina}}&termo={{ request.GET.termo }}">{{pagina}}</a></li>
     {% else %}
-    <li class="page-item"><a class="page-link" href="?p={{pagina}}">{{pagina}}</a></li>
+    <li class="page-item"><a class="page-link" href="?p={{pagina}}&termo={{ request.GET.termo }}">{{pagina}}</a></li>
     {% endif %}
     {% endfor %}
   </ul>
