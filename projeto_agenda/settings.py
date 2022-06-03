@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'contatos.apps.ContatosConfig',
+    'accounts.apps.AccountsConfig'
 ]
 
 MIDDLEWARE = [
@@ -137,6 +138,6 @@ MESSAGE_TAGS = {
     constants.ERROR: 'alert-danger',
     constants.WARNING: 'alert-warning',
     constants.DEBUG: 'alert-info',
-    constants.SUCCESS: 'alert-sucess',
+    constants.SUCCESS: 'alert-success',
     constants.INFO: 'alert-info',
 }
